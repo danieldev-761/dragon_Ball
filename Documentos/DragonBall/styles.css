@@ -1,0 +1,74 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+
+
+header {
+  font-family: 'Courier New', Courier, monospace;
+  background: rgb(39 43 51);
+  padding: 14px 14px 14px ;
+  position: sticky;
+  top: 0;
+  
+}
+
+
+.titulo-header{
+    align-items: center;
+    padding-left: 20px;
+    
+}
+
+body {
+  min-height: 100dvh;
+  color: orangered;
+  line-height: 1.6;
+}
+
+
+h2{
+  margin: 40px;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  text-align: center;  
+}
+
+div{
+    display: flex;
+    flex-wrap: wrap;
+}
+ 
+
+.card{
+    border: 2px solid #d98313;
+    margin: 20px; 
+    padding: 20px; 
+    border-radius: 8px;
+    justify-items: center;
+    text-align: justify;
+    width: 400px;
+    height: auto;
+    
+}
+
+.card :hover{
+    transform: scale(1.1);
+    transition: 0.4s ease;
+}
+
+.card .personaje{
+    width: 150px;
+    height: 300px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+
+}
+
+
+
+.logo{
+    width: 90px;
+    border-radius: 100%;
+    border: #d98313 10px solid;
+    height: 80px;
+    mix-blend-mode:hard-light;
+}
