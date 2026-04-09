@@ -127,9 +127,7 @@ div{
 
 
 .logo{
-    width: 90px;
-    border-radius: 100%;
-    border: #d98313 10px solid;
+    width: 200px;
     height: 80px;
     mix-blend-mode:hard-light;
 }
