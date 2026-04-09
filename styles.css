@@ -1,0 +1,142 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+
+
+header {
+    font-family: 'Courier New', Courier, monospace;
+    background: rgb(39 43 51);
+    padding: 14px 14px 14px ;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+.titulo-header{
+    align-items: center;
+    padding-left: 20px;
+    
+}
+
+body {
+    min-height: 100dvh;
+    color: orangered;
+    line-height: 1.6;
+}
+
+
+h1{
+    font-family: 'Impact', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    border-color: rgb(207, 207, 19);
+}
+
+
+h2{
+    margin: 40px;
+    font-family: 'Impact', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;  
+}
+
+h3{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#lista {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card{
+    border: 2px solid transparent;
+    padding: 20px; 
+    border-radius: 8px;
+    text-align: justify;
+    width: 300px;
+    min-height: 550px;
+    transition: transform 0.5s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+    z-index: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.item p {
+    flex: 1;
+    margin-top: 20px;
+}
+
+.card:hover{
+    transform: scale(1.04);
+    z-index: 10;
+    border-color: #d98313;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+}
+
+.card .personaje{
+    width: 150px;
+    height: 260px;
+    display: block;
+    margin-bottom: 20px;
+    object-fit: contain;
+    border: none;
+}
+
+.card .descripcion,
+.card .stats {
+    display: none;
+}
+
+.card:hover .descripcion,
+.card:hover .stats {
+    display: block;
+}
+
+
+
+.logo{
+    width: 90px;
+    border-radius: 100%;
+    border: #d98313 10px solid;
+    height: 80px;
+    mix-blend-mode:hard-light;
+}
+
+#footer{
+    background: rgb(39 43 51);
+    color: #d98313;
+    text-align: center;
+    padding: 20px;
+}
